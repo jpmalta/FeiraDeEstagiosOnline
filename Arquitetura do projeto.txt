@@ -1,0 +1,80 @@
+Vamos organizar a arquitetura do projeto de forma clara e objetiva. Aqui estão os passos principais que precisamos seguir:
+
+1. Definição das Classes do Modelo
+Vamos começar com as classes que irão representar os dados principais da aplicação. Abaixo estão algumas classes que se encaixam nas funcionalidades que você descreveu:
+
+Classes Principais:
+Usuario (classe base para Aluno e Empresa)
+
+id: int
+nome: String
+email: String
+senha: String
+Aluno (herda de Usuario)
+
+perfilAcademico: String
+curriculo: File (ou String, se for o caminho para o arquivo)
+Empresa (herda de Usuario)
+
+dadosEmpresa: String
+Vaga
+
+id: int
+titulo: String
+descricao: String
+requisitos: String
+tipoEstagio: String (remoto/presencial)
+empresa: Empresa
+localizacao: String (cidade, por exemplo)
+Aplicacao (Candidatura)
+
+id: int
+aluno: Aluno
+vaga: Vaga
+status: String (Ex: "Em avaliação", "Aprovado", "Rejeitado")
+2. Arquitetura do Banco de Dados (MySQL)
+Aqui estão as tabelas sugeridas para cada classe:
+
+Tabelas principais:
+Usuario
+
+id: int (PK)
+nome: varchar(255)
+email: varchar(255)
+senha: varchar(255)
+tipo: enum ('aluno', 'empresa') - (para definir se o usuário é um aluno ou empresa)
+Aluno
+
+id: int (PK, FK de Usuario)
+perfilAcademico: varchar(255)
+curriculo: varchar(255) (caminho do arquivo no servidor)
+Empresa
+
+id: int (PK, FK de Usuario)
+dadosEmpresa: varchar(255)
+Vaga
+
+id: int (PK)
+titulo: varchar(255)
+descricao: text
+requisitos: text
+tipoEstagio: enum ('remoto', 'presencial')
+empresa_id: int (FK de Empresa)
+localizacao: varchar(255)
+Aplicacao
+
+id: int (PK)
+aluno_id: int (FK de Aluno)
+vaga_id: int (FK de Vaga)
+status: varchar(50)
+3. Segurança
+Vamos implementar autenticação e proteção básica:
+
+Autenticação simples com nome de usuário e senha. Utilizar hashing de senha (Ex: BCrypt).
+Proteção de arquivos para currículos, com verificação de extensão e tamanho dos arquivos no upload.
+Camada de segurança na aplicação JavaFX: validação de inputs, evitando SQL injection e ataques de manipulação de dados.
+4. Passos para Iniciar o Desenvolvimento
+Implementar o Esboço das Telas: Criar o layout básico usando JavaFX para cada uma das telas descritas.
+Criar Classes do Modelo: Com as classes definidas, podemos começar a implementação no Java, com os atributos e métodos necessários.
+Conectar ao Banco de Dados: Usar JDBC (Java Database Connectivity) para conectar o Java ao MySQL.
+Implementar Autenticação e Segurança: Incluir a parte de login e upload seguro de currículos.

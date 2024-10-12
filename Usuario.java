@@ -1,15 +1,47 @@
 public class Usuario {
-    private int id;
+    private Long id;
     private String nome;
-    private String email;
     private String senha;
+    private String tipo; // "aluno" ou "empresa"
     
-    public Usuario(int id, String nome, String email, String senha) {
+    // Construtor
+    public Usuario(Long id, String nome, String senha, String tipo) {
         this.id = id;
         this.nome = nome;
-        this.email = email;
+        this.senha = senha;
+        this.tipo = tipo;
+    }
+
+    // Getters e Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 
-    // Getters e setters
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }
