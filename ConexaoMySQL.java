@@ -1,19 +1,27 @@
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class ConexaoMySQL {
-    private static final String URL = "jdbc:mysql://localhost:3306/nome_do_banco";
-    private static final String USUARIO = "root"; // ou outro usuário
-    private static final String SENHA = "senha";
+
+    private static final String PROPERTIES_FILE = "db.properties";
 
     public static Connection conectar() {
-        try {
-            return DriverManager.getConnection(URL, USUARIO, SENHA);
-        } catch (SQLException e) {
+        Properties props = new Properties();
+        try (FileInputStream fis = new FileInputStream(PROPERTIES_FILE)) {
+            props.load(fis);
+
+            String url = props.getProperty("db.url");
+            String usuario = props.getProperty("db.username");
+            String senha = props.getProperty("db.password");
+
+            return DriverManager.getConnection(url, usuario, senha);
+        } catch (SQLException | IOException e) {
             e.printStackTrace();
             return null;
         }
-
     }
 }
