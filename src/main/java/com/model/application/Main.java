@@ -1,9 +1,9 @@
-package src.main.java.com.application;
+package com.model;
 import java.sql.Connection;
 
-import src.main.java.DAO.UsuarioDAO;
-import src.main.java.model.Usuario;
-import src.main.java.util.ConexaoMySQL;
+import com.DAO.UsuarioDAO;
+import com.model.Usuario;
+import com.util.ConexaoMySQL;
 
 public class Main {
     public static void main(String[] args) {

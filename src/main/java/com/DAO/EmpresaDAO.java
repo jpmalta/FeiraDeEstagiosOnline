@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import src.main.java.model.Empresa;
+import com.model.Empresa;
 
 public class EmpresaDAO {
     private Connection connection;

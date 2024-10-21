@@ -1,4 +1,4 @@
-package src.main.java.model;
+package java.model;
 public class Empresa extends Usuario {
     private String cidade;
     private String descricao;
