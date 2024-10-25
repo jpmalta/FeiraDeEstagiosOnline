@@ -1,4 +1,4 @@
-package src.main.java.com.DAO;
+package src.main.java.com.model.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import src.main.java.model.Usuario;
+import src.main.java.com.model.Usuario;
 
 public class UsuarioDAO {
     private Connection connection;

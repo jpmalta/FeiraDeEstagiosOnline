@@ -1,9 +1,11 @@
-package com.model;
-import java.sql.Connection;
+package src.main.java.com.model.application;
 
-import com.DAO.UsuarioDAO;
-import com.model.Usuario;
-import com.util.ConexaoMySQL;
+import java.sql.Connection;
+import java.com.DAO.UsuarioDAO;
+import java.com.model.Usuario;
+import java.com.util.ConexaoMySQL;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
 public class Main {
     public static void main(String[] args) {
