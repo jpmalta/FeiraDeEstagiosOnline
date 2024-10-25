@@ -1,7 +1,7 @@
 package src.main.java.com.model.application;
 
 import java.sql.Connection;
-import java.com.DAO.UsuarioDAO;
+import java.com.dao.UsuarioDAO;
 import java.com.model.Usuario;
 import java.com.util.ConexaoMySQL;
 import javafx.application.Application;

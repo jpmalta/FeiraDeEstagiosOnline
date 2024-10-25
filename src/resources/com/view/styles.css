@@ -1,0 +1,16 @@
+/* styles.css */
+
+.header {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-padding: 5px;
+}
