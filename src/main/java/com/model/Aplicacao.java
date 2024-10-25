@@ -1,4 +1,5 @@
-package src.main.java.model;
+package src.main.java.com.model;
+
 import java.time.LocalDateTime;
 
 public class Aplicacao {

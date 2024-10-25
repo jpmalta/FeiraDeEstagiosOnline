@@ -1,4 +1,5 @@
-package com;
+package src.main.java.com.DAO;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.model.Aluno;
+import java.util.Aluno;
 
 public class AlunoDAO {
     private Connection connection;

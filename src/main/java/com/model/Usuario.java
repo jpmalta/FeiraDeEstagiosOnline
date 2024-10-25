@@ -1,4 +1,5 @@
-package src.main.java.model;
+package src.main.java.com.model;
+
 public class Usuario {
     private Long id;
     private String nome;

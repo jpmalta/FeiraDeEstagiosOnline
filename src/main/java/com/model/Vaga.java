@@ -1,4 +1,5 @@
-package src.main.java.model;
+package src.main.java.com.model;
+
 public class Vaga {
     private Long id;
     private String titulo;
