@@ -1,9 +1,9 @@
-package src.main.java.com.model.application;
+package src.main.java.com.application;
 
 import java.sql.Connection;
-import java.com.dao.UsuarioDAO;
-import java.com.model.Usuario;
-import java.com.util.ConexaoMySQL;
+import com.dao.UsuarioDAO;
+import com.model.Usuario;
+import com.util.ConexaoMySQL;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
