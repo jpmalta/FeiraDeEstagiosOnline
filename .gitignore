@@ -1,2 +1,4 @@
 # Ignore sensitive config files
 db.properties
+launch.json
+settings.json
