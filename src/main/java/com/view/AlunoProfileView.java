@@ -1,4 +1,4 @@
-package src.main.java.com.view;
+package com.view;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;

@@ -1,4 +1,4 @@
-package src.main.java.com.model;
+package com.model;
 
 public class Aluno extends Usuario {
     private String perfilAcademico;
