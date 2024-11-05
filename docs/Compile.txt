@@ -1,0 +1,35 @@
+[PT-BR]
+Para compilar este projeto, você precisa seguir alguns passos:
+
+Primeiro, abra o terminal e use o comando CD para ir para a página src:
+cd "C:\project_local_source\src"
+
+Depois, compile todos os arquivos Java usando o caminho correto: (Não funcionou)
+javac -d out -sourcepath . main/java/com/application/Main.java
+
+Se você tiver vários arquivos Java, pode compilá-los todos de uma vez especificando o diretório raiz: (funcionou)
+javac -d out -sourcepath . main/java/com/application/Main.java main/java/com/model/Usuario.java main/java/com/model/dao/UsuarioDAO.java main/java/com/util/ConexaoMySQL.java
+
+Alternativamente, você pode usar um wildcard para compilar todos os arquivos Java no diretório src:
+javac -d out -sourcepath . main/java/**/*.java
+
+Depois de compilar, você pode executar sua classe Main usando o comando java:
+java -cp out com.application.Main
+
+[EN-US]
+To compile this project, you need to follow some steps:
+
+First, open the terminal and use the CD command to go to the src page:
+cd "C:\project_local_source\src"
+
+Then, compile all Java files using the correct path: (Not worked)
+javac -d out -sourcepath . main/java/com/application/Main.java
+
+If you have multiple Java files, you can compile them all at once by specifying the root directory: (worked)
+javac -d out -sourcepath . main/java/com/application/Main.java main/java/com/model/Usuario.java main/java/com/model/dao/UsuarioDAO.java main/java/com/util/ConexaoMySQL.java
+
+Alternatively, you can use a wildcard to compile all Java files in the src directory:
+javac -d out -sourcepath . main/java/**/*.java
+
+After compiling, you can run your Main class using the java command:
+java -cp out com.application.Main

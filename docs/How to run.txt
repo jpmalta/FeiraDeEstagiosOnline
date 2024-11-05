@@ -1,0 +1,9 @@
+[PT-BR]
+Antes de executar o programa, é necessário configurar as variáveis de ambiente para se conectar corretamente ao banco de dados:
+
+[EN-US]
+Before running the program, it is necessary to configure the environment variables to correctly connect to the database:
+
+set DB_USERNAME=<root>
+set DB_PASSWORD=<password>
+java -cp "out;src/main/resources" com.application.Main
