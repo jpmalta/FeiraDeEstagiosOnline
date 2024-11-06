@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Button;
 import com.model.Vaga;
-import com.dao.VagaDAO;
+import com.model.dao.VagaDAO;
 
 import java.util.List;
 

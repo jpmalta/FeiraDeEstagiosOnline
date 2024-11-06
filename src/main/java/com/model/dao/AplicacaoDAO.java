@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.model.application;
+import com.application;
 
 public class AplicacaoDAO {
     private Connection connection;

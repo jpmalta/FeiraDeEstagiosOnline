@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
 import com.model.Vaga;
-import com.dao.VagaDAO;
+import com.model.dao.VagaDAO;
 
 public class CadastroVagaController {
     @FXML
