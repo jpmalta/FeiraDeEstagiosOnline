@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>src.main.java.com.application</groupId>
+    <groupId>com.application</groupId>
     <artifactId>FeiraDeEstagiosOnline</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -40,15 +40,19 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>${javafx.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
                 <configuration>
                     <mainClass>com.application.Main</mainClass>
+                </configuration>
+            </plugin>
+            
+            <!-- Plugin para o compilador Maven -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
         </plugins>
