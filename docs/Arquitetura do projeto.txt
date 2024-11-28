@@ -78,3 +78,5 @@ Implementar o Esboço das Telas: Criar o layout básico usando JavaFX para cada 
 Criar Classes do Modelo: Com as classes definidas, podemos começar a implementação no Java, com os atributos e métodos necessários.
 Conectar ao Banco de Dados: Usar JDBC (Java Database Connectivity) para conectar o Java ao MySQL.
 Implementar Autenticação e Segurança: Incluir a parte de login e upload seguro de currículos.
+
+Durante o desenvolvimento do projeto foram necessárias algumas alterações. 
